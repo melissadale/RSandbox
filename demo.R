@@ -1,9 +1,7 @@
 # https://www.datamentor.io/r-programming/examples/fibonacci-recursion/
 # Program to display the Fibonacci sequence up to n-th term using recursive functions
-
-
-recur_fibonacci <- function(n) {
-  if(n <= 2) {
+recurse_fibonacci <- function(n) {
+  if(n <= 1) {
     return(n)
   } else {
     return(recurse_fibonacci(n-1) + recurse_fibonacci(n-2))
@@ -17,6 +15,6 @@ if(nterms <= 0) {
 } else {
   print("Fibonacci sequence:")
   for(i in 0:(nterms-1)) {
-    print(recur_fibonacci(i))
+    print(recurse_fibonacci(i))
   }
 }
